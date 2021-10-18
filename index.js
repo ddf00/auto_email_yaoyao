@@ -15,6 +15,7 @@ const {
   fromDisplaySubText,
   user,
   to,
+  cc,
   weatherKey,
   location,
   type,
@@ -56,6 +57,7 @@ async function init() {
     sendEmail({
       from: fromDisplayText,
       to,
+      cc,
       subject: fromDisplaySubText,
       html: htmlStr,
     });
