@@ -1,7 +1,6 @@
 function fn(weatherData, lifeData, word, imgurl, lovingDays) {
   const { daily: weatherDataDaily } = weatherData;
   const { daily } = lifeData;
-  const img = require('./IMG_0611.JPG')
   return `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -19,7 +18,7 @@ function fn(weatherData, lifeData, word, imgurl, lovingDays) {
         <div>
           <img
             style="width: 100%; max-width: 768px"
-            src="${img}"
+            src="${imgurl}"
             alt="图片"
           />
         </div>
