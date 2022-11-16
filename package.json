@@ -9,7 +9,7 @@
   "author": "ccy",
   "dependencies": {
     "dayjs": "1.10.7",
-    "node-fetch": "2.6.1",
+    "node-fetch": "^2.6.7",
     "nodemailer": "6.6.3"
   }
 }
