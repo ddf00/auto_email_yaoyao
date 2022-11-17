@@ -18,7 +18,7 @@ function fn(weatherData, lifeData, word, imgurl, lovingDays) {
         <div>
           <img
             style="width: 100%; max-width: 768px"
-            src="http://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c221ce654a664618a28e1001197096b3~tplv-k3u1fbpfcp-watermark.image?"
+            src="${imgurl}"
             alt="图片"
           />
         </div>
