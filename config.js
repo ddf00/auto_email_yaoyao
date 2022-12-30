@@ -1,6 +1,6 @@
 // 配置信息
 module.exports = {
-  fromDisplayText: '垚垚我想你啦', // 收件箱展示的来件人名字
+  fromDisplayText: '垚垚', // 收件箱展示的来件人名字
   fromDisplaySubText: '每日提醒', // 收件箱展示的次级标题
   user: '1325395157@qq.com', // 发送者邮箱
   pass: 'uzqvzvzolaaufiac', // 发送者邮箱MTP协议密码
