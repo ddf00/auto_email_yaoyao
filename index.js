@@ -1,10 +1,10 @@
-const fetch = require('node-fetch');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
+const fetch = require("node-fetch");
+const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+const timezone = require("dayjs/plugin/timezone");
 
-const sendEmail = require('./sendEmail');
-const emailHtml = require('./emailHtml');
+const sendEmail = require("./sendEmail");
+const emailHtml = require("./emailHtml");
 
 // 给dayjs添加时区选项
 dayjs.extend(utc);
@@ -21,7 +21,7 @@ const {
   type,
   tianXingKey,
   startDay,
-} = require('./config');
+} = require("./config");
 
 async function init() {
   try {
@@ -45,9 +45,9 @@ async function init() {
     const { word, imgurl } = oneData.newslist[0];
 
     // 计算日期
-    const lovingDays = dayjs(dayjs().tz('Asia/Shanghai')).diff(
+    const lovingDays = dayjs(dayjs().tz("Asia/Shanghai")).diff(
       startDay,
-      'days'
+      "days"
     );
 
     // 用邮件模版生成字符串
@@ -64,10 +64,10 @@ async function init() {
   } catch (e) {
     // 发送邮件给自己提示
     sendEmail({
-      from: '报错啦',
+      from: "报错啦",
       to: user,
-      subject: '定时邮件-报错提醒',
-      html: '请查看github actions',
+      subject: "定时邮件-报错提醒",
+      html: "请查看github actions",
     });
   }
 }
